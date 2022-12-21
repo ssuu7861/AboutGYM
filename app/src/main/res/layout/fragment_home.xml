@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/ad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"/>
+
+                <ImageView
+
+                    android:src="@drawable/ad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="득근하는 당신의 취향저격 상품"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="aboutgym shop에서 만나보세요"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:background="@color/mainColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/homeTap"
+                android:layout_marginTop="7dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/communityTap"
+                android:layout_marginTop="7dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/community" />
+
+            <ImageView
+                android:id="@+id/trainerTap"
+                android:layout_marginTop="7dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/trainer" />
+
+            <ImageView
+                android:id="@+id/gymTap"
+                android:layout_marginTop="7dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/bookmark" />
+
+            <ImageView
+                android:id="@+id/mapTap"
+                android:layout_marginTop="7dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/map" />
+
+            <ImageView
+                android:id="@+id/shopTap"
+                android:layout_marginTop="7dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:src="@drawable/shop" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

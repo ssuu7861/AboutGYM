@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.gymapplication.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trainerFragment"
+            app:destination="@id/trainerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_gymFragment"
+            app:destination="@id/gymFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.example.gymapplication.fragment.CommunityFragment"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" >
+        <action
+            android:id="@+id/action_communityFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_trainerFragment"
+            app:destination="@id/trainerFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_gymFragment"
+            app:destination="@id/gymFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gymFragment"
+        android:name="com.example.gymapplication.fragment.GymFragment"
+        android:label="fragment_gym"
+        tools:layout="@layout/fragment_gym" >
+        <action
+            android:id="@+id/action_gymFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_gymFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_gymFragment_to_trainerFragment"
+            app:destination="@id/trainerFragment" />
+        <action
+            android:id="@+id/action_gymFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_gymFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.gymapplication.fragment.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_trainerFragment"
+            app:destination="@id/trainerFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_gymFragment"
+            app:destination="@id/gymFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.gymapplication.fragment.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_trainerFragment"
+            app:destination="@id/trainerFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_gymFragment"
+            app:destination="@id/gymFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainerFragment"
+        android:name="com.example.gymapplication.fragment.TrainerFragment"
+        android:label="fragment_trainer"
+        tools:layout="@layout/fragment_trainer" >
+        <action
+            android:id="@+id/action_trainerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_trainerFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_trainerFragment_to_gymFragment"
+            app:destination="@id/gymFragment" />
+        <action
+            android:id="@+id/action_trainerFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_trainerFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+</navigation>
